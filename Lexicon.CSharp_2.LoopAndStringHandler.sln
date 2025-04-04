@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopAndStringHandler", "LoopAndStringHandler\LoopAndStringHandler.csproj", "{5A292E77-B474-44C1-AA60-59838453FCE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopAndStringHandler.Library", "LoopAndStringHandler.Library\LoopAndStringHandler.Library.csproj", "{B7CE355F-D90B-4AE7-8712-C54D635BE098}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A292E77-B474-44C1-AA60-59838453FCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A292E77-B474-44C1-AA60-59838453FCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A292E77-B474-44C1-AA60-59838453FCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A292E77-B474-44C1-AA60-59838453FCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CE355F-D90B-4AE7-8712-C54D635BE098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CE355F-D90B-4AE7-8712-C54D635BE098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CE355F-D90B-4AE7-8712-C54D635BE098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CE355F-D90B-4AE7-8712-C54D635BE098}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2D3CF9F-DC00-43FD-A87F-46C2260CF1C5}
+	EndGlobalSection
+EndGlobal
