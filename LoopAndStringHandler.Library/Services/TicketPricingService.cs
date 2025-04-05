@@ -34,6 +34,7 @@ public static class TicketPricingService
     public static void GetGroupTicketPrice(uint[] ages)
     {
         CalculateGroupPrice(ages);
+        OutputUtil.PrintSuccessMessage($"Number of people in the group: {ages.Length}");
         OutputUtil.PrintSuccessMessage(GetStringMessage(PriceCategory.Group));
     }
 
