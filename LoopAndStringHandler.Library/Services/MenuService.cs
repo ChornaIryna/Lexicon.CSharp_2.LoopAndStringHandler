@@ -7,8 +7,10 @@ namespace LoopAndStringHandler.Library.Services
         private readonly InputValidation _inputValidation = new();
         public void DisplayMenu()
         {
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.WriteLine("-- Welcome to the Main Menu! --");
             Console.ResetColor();
-            Console.WriteLine("Welcome to the Main Menu!");
             Console.WriteLine("Please enter a number to select an option:");
             Console.WriteLine("1. Check ticket price by age");
             Console.WriteLine("2. Calculate total price for a group");
@@ -45,7 +47,7 @@ namespace LoopAndStringHandler.Library.Services
         private void RunTicketPriceCategoryCheck()
         {
             Console.Write("Enter your age: ");
-            TicketPricingService.GetTicketPrice(Console.ReadLine().Trim());
+            TicketPricingService.GetTicketPrice(Console.ReadLine()?.Trim());
         }
 
         private void RunGroupTicketPriceCalculator()
@@ -79,7 +81,9 @@ namespace LoopAndStringHandler.Library.Services
         private void RunWordExtractor()
         {
             Console.Write("Enter a sentence with at least three words: ");
-            WordExtractorService.GetThirdWord(Console.ReadLine().Trim());
+            string? sentence = Console.ReadLine()?.Trim();
+            if (sentence != null)
+                WordExtractorService.GetThirdWord(sentence);
         }
     }
 }

@@ -5,15 +5,15 @@ namespace LoopAndStringHandler;
 
 internal class UserInterface
 {
-    private bool running = true;
+    private bool _running = true;
     private readonly MenuService _menuService = new();
     private readonly InputValidation _inputValidation = new();
     internal void Run()
     {
-        while (running)
+        while (_running)
         {
             _menuService.DisplayMenu();
-            string choice = Console.ReadLine().Trim();
+            string? choice = Console.ReadLine()?.Trim();
 
             ProcessChoice(choice);
 
@@ -21,11 +21,11 @@ internal class UserInterface
         }
     }
 
-    private void ProcessChoice(string choice)
+    private void ProcessChoice(string? choice)
     {
         if (_inputValidation.ValidateInput(uint.TryParse(choice, out uint result)))
             _menuService.RunMenuOption(result);
         if (choice == "0")
-            running = false;
+            _running = false;
     }
 }

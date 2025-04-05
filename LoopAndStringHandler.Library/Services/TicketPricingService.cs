@@ -13,7 +13,7 @@ public static class TicketPricingService
         };
 
 
-    public static void GetTicketPrice(string age)
+    public static void GetTicketPrice(string? age)
     {
         if (_inputValidation.ValidateInput(uint.TryParse(age, out uint result), "Please enter a valid age (a number greater than 0)."))
         {
